@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .clase1{
+            background-color: brown;
+            color:bisque;
+            border:1px solid black;
+            border-radius:10px;
+            margin: 1em;
+        }
+
+        .clase2{
+            background-color:rgb(50, 81, 153);
+            color:bisque;
+            border:1px solid black;
+            border-radius:10px;
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal">
+        Clase DOM
+    </h1>
+
+    <div id="contenedor">
+
+    </div>
+
+    <button id="boton">Cliqueame</button>
+
+    <script src="./script_ejercicio.js"></script>  
+    <!-- Importo el archivo -->
+
+</body>
+</html>
+
+<!-- Un evento es algo que sucede, por ejemplo, hacer un clic en un boton y que me muestre un parrafo en el navegador
+Un evento es una señal de algo que sucede. Todos los ndos del DOM pueden generar estas señales
+
+Un Event Listener es el encargado de escuchar por esas señales y hacer algo
+
+En el caso de arriba el evento es cliquear un boton, el Even Listener espera esta señal y muestra el parrafo en el 
+navegador
+
+Cada vez que un Event Listener ejecuta una funcion envia por defecto como argumento a la funcion el evento  y el 
+evento es un objeto, para saber quien fue el responsable de ese evento se usa event.target-->

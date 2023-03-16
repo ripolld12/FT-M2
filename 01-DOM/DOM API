@@ -1,0 +1,79 @@
+API: Application Programming Interface
+Una API es un recurso que nos brinda el navegador para interactuar con el DOM usando JS.
+La API es una caja de herramientas para poder un trabajo especifico.
+
+La API nos permite:
+- Inspeccionar los elementos y la estructura del documento
+- Modificar la estructura; agregar, modificar o eliminar elementos HTML o atributos
+- Modificar el contenido del documento
+- Modificar los estilos (CSS)
+- Agregar o eliminar eventos
+- Reaccionar a determinados eventos
+- etc...
+
+De forma sencilla! Por ejemplo: Ya no es necesario recorrer un arbol para tomar un nodo.
+
+La API va a tener algunos metodos o propiedades. Por ejemplo va a tener una serie de funciones que se van a llamar 
+selectores. Esos selectores van a permitir tomar elementos del DOM y realizar acciones con ellos.
+
+Para esto accedo al document en la consola del navedor y selecciono el metodo. Por ejemplo:
+
+document.getElementsByTagName('p')    // me toma el elemento por nombre de etiqueta
+
+Si tomo como ejemplo el archivo index, me va a devolver esto:
+
+HTMLCollection(3) [p,p,p]  //Me retornó un array con los parrafos (p) que hay en el documento, como hay tres, me devuelve tres.
+
+Si quiero que me traga el segundo parrafo de ese array debo escribir:
+
+document.getElementsByTagName('p')[1]   // me debe devolver el segundo parrafo
+
+Como todo esto está en JS, yo podria hacer esto:
+
+var SegundoParrafo = document.getElementsByTagName('p')[1]
+
+Y esto me guardará el segundo parrafo de mi DOM en una variable
+
+Otros selectores son:
+getElementsByClassName()    // me devuelve un array tambien, incluso si es una sola cosa o ninguna.
+getElementByID              // me decuelve un array con el elemento que corresponde a ese ID (solo es uno porque 
+                               el ID es unico para cada elemento)
+
+QUERY SELECTOR
+
+Es un metodo que trae todos los elementos que quiero
+
+document.querySelectorAll('p') --> Me trae todos los elementos con etiqueta p
+document.querySelectorAll('.parrafo') --> Me trae todos los elementos de la clase .parrafo
+
+querySelectorAll --> Me trae todo en un array
+querySelector ---> Me trae solo uno
+
+document.querySelector('#principal') --> Devuelve el elemento con el ID principal
+
+Como estoy trabajando en JS, yo puedo hacer esto:
+
+var titulo = document.querySelector('#principal')
+
+Si yo retorno titulo me va a arrojar un objeto que contiene el elemento con ese ID
+
+Y como es un objeto yo puedo hacer esto:
+
+titulo.innerHTML ---> 'Me aroja Clase de DOM'  (puedo aplicar una propiedad o metodo que me arroje el texto de ese elemento)
+
+Por tanto, tambien puedo cambiarla accediendo desde la variable y no directamente al arbol HTML
+
+titulo.inerHTML ---> 'Me llamo Diana'   (esto cambiara el texto que se muestra en el navegador)
+
+
+
+
+
+
+
+
+
+
+
+
+

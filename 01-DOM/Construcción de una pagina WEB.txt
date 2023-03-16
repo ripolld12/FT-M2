@@ -1,0 +1,45 @@
+DOM: Document Object Model
+Es un arbol que va a contener el arbol de elementos que van a componer el HTML. Cuando nosotros abrimos una pagina, lo primero que se forma es el DOM
+El DOM es un objeto de JS, es la representación de la estructura HTML.
+
+¿Cómo se construye una pagina WEB?
+
+1. Construcción del DOM
+
+HTML
+    head
+        title
+             My first web page
+    body
+        h1
+            Hello, world!
+        p
+            How are you?
+
+El DOM es un objeto que tiene una estructura de arbol. 
+
+
+2. Construcción del CSSOM
+
+Va ser un arbol, que va a tener una estructura parecida al DOM, pero que va a contener para cada elemento las reglas de CSS
+(font-size, display, color, etc.). Asemeja una estrucura de cascada, donde las propiedades del hijo seran las del padre, a menos que se especifique lo contrario.
+
+3. Creando el render Tree
+
+Es una combinación del DON y el CSSOM, en donde se dejan solo los elementos visibles.
+
+4. Generando el Layout
+
+Es lo que determina el tamaño del viewport, da el contexto necesario para calcular los estilos que dependen de el.
+Se pregunta donde voy a mostrar en render tree (estoy en una compu? un celular? esta horizontal?) Ejemplo: % o vw units
+EL viewport se puede configurar a traves del tag meta viewport.
+
+5. Paint 
+
+Dibuja en cada pixel de la pantalla lo que se quiere mostrar (la pagina web)
+
+6. Composite
+
+Muestro lo que se dibujó
+
+

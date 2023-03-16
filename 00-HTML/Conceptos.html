@@ -1,0 +1,94 @@
+<!-- HTML: Hyper Text Markup Lenguaje 
+Es un lenguaje que se usa para crear estructuras de sitios web y va de la mano con CSS (que da estilo) y JS
+
+Para crear sitios web vamos a necesitar:
+
+Un navegador web donde se va a visualizar la estructura de nuestro sitio web 
+Un editor de codigo donde vamos a escribir el codigo de donde se va a crear nuestro sitio web (yo uso VSC)
+
+
+Etiqueta: Es un fragmento de codigo que representa algo en el sitio web, puede representar un boton, un campo de texto, 
+etc. Dentro de cada etiqueta vamos a tener un contenido, que por lo general es texto. Tambien las etiquetas pueden tener 
+atributos, los atributos son caracteristicas que va a tener nuestra etiqueta
+
+Ej: <etiqueta atributos='valor'>Contenido</etiqueta>
+
+<h1> Titulo de nuestro documento </h1>  
+<h2> Titulo de nuestro documento </h2>  
+<h3> Titulo de nuestro documento </h3>  
+<h4> Titulo de nuestro documento </h4>  
+<h5> Titulo de nuestro documento </h5>  
+<h6> Titulo de nuestro documento </h6>  
+
+Este hx es un header y pone el contenido en letras grandes, como un titulo, y puede ir de h1 a h6 siendo el primero el 
+mas grande y el ultimo el mas pequeño. Solo se puede usar un h1 por pagina, pero si podemos usar los demas, mas de una 
+vez
+
+Para iniciar el codigo HTML debemos seguir esta estructura basica: escribo html y en la ventana desplegale le doy 
+html5-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel='stylesheet' href="'estilos.css"> -->
+    <!-- Esta etiqueta sirve para enlazar el archivo CSS que le dara estilo a mi sitio web, el rel indique qué tipo de 
+    archivo se va a enlazar y el href es el nombre del archivo-->
+    <link rel="shortcur icon" type="'image/x-icon" href="Imagenes/favicon.ico">
+    <!-- Esta etiqueta sirve para enlazar el favicon que aparecera en la pestaña de mi sitio web, el rel indique qué tipo 
+    de archivo se va a enlazar y el href es el nombre del archivo. El favicon es un icono/imagen pequeña que aparece en 
+    la pestaña de mi pagina web , por ejemplo con google aparece una g-->
+    <title>Titulo de nuestra primera web</title> 
+    <!-- El titulo no se va a ver dentro de la pagina porque hace parte del head, este titulo va a quedar como titulo 
+        en la pestaña del navegador y se usa de referencia cuando se va a buscar la pagina en el motor de busqueda -->
+
+</head>
+
+<body>
+    <h1> Titulo de nuestro documento </h1>  
+    <!-- Este header si se va a ver porque ya se encuentra en el body de mi sitio web. Si quiero acceder al codigo de
+    mi sitio web desde el navegador le puedo dar clic derecho y seleccionar "Ver codigo fuente" -->
+    
+    <br />
+    <!-- No todas las etiquetas se abre y cierran como los header, ejemplo br se usa para dejar un espacio entre dos 
+        elementos del sitio web y como se puede ver, no se cierra igual. -->
+    
+    <p> 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <!-- Esta etiqueta se usa para agregar un parrafo, si yo agrego un parrago debajo de otro, va a dejar un espacio 
+        entre cada uno para que se vea estetico. Si yo quiero dar un enter dentro del parrafo puedo usar <br />
+        Tambien podemos agregar negritas usando <b> </b> o <strong></strong>, son iguales visualmente pero strng sirve para que 
+        los motores de busqueda pueden buscar mejor tu pagina.
+        <i></i> pone las letras en formato cursiva o italico
+        <span></span> visualmente no hace nada, pero despues puedes darle estilo a lo que tenga dentro con CSS
+        <blockquote></blockquote> le agrega sangria 
+        <cite></cite> permite agregar una cita en cursiva-->
+
+    <a target="_blank" href="https://www.google.com.co/">Ir a Google</a>
+    <a href="Imagenes/HOLA.jpg">Ir a la imagen</a>
+    <!-- Con esto podemos agregar un enlace, debemos agregar siempre la URL en el atributo href para que sepa a donde nos 
+    va a llevar ese enlace. Existen rutas absolutas y relativas, la del ejemplo de google es absluta porque es externa, 
+    mientras que la del ejemplo de la imagen es relativa.
+    Para que la pagina me abra en una nueva pestaña uso el atributo target="_blank"-->
+
+    <a href="mailto:ripolld12@gmail.com" title='Enviar correo a Diana Ripoll'>Email Mail</a>
+    <!-- Esta etiqueta permite dejar un enlace para que se pueda enviar un correo a la direccion indicada. El title no 
+    va verse a primera visto, lo aparecera si se pone el cursor encima de Email Mail, como un mensaje -->
+
+    <hr/>
+    <!-- Esta etiqueta indica un cambio de seccion y se representa con una linea horizontal -->
+    
+    <h2> Subtitulo de nuestro documento </h2>  
+    
+</body>
+
+</html>
+
+
