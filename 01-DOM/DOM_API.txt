@@ -1,6 +1,6 @@
 API: Application Programming Interface
 Una API es un recurso que nos brinda el navegador para interactuar con el DOM usando JS.
-La API es una caja de herramientas para poder un trabajo especifico.
+La API es una caja de herramientas para poder realizar un trabajo especifico.
 
 La API nos permite:
 - Inspeccionar los elementos y la estructura del documento
@@ -64,6 +64,20 @@ titulo.innerHTML ---> 'Me aroja Clase de DOM'  (puedo aplicar una propiedad o me
 Por tanto, tambien puedo cambiarla accediendo desde la variable y no directamente al arbol HTML
 
 titulo.inerHTML ---> 'Me llamo Diana'   (esto cambiara el texto que se muestra en el navegador)
+
+Si yo consologueo console.log(window), me a mostrar el objeto global y si miro las propiedades, todos esos metodos
+son las apis que puedo usar 
+
+
+let texto = 'Hola mi nombre es Diana Ripoll'
+const hablar = (texto) => speechSynthesis.speak(new SpeechSynthesisUtterance(texto))
+
+hablar(texto)
+
+Esta API sirve para reproductir una voz con el texto que quiera.
+
+
+
 
 
 

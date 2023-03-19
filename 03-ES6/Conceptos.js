@@ -72,8 +72,40 @@ const bob2 = {
     }
 } 
 
+// OBJETOS
+
+let bob3 = {
+    name: "Bob",
+    friendas: [],
+    printFriends(){
+        this.friends.forEach(f => console.log(this.name+" knows "+ f ))
+    }
+}
+
+// CLASES
+
+//Antes: Funcion constructora
+
+function Persona(name){  // En los tres puntos sobre la P de persona, puedo convertirlo a clase
+    this.person=name;
+}
+
+Persona.prototype.add = (name) => this.person=name
+
+//Despues: Clase
+
+class Persona{
+    constructor(name){
+        this.person=name;
+    }
+
+    add(name){
+        this.person=name;
+    }
+}
 
 
+// OBJETO LITERAL
 
 
 

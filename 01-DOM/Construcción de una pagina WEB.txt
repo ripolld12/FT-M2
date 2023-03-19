@@ -21,7 +21,7 @@ El DOM es un objeto que tiene una estructura de arbol.
 
 2. Construcción del CSSOM
 
-Va ser un arbol, que va a tener una estructura parecida al DOM, pero que va a contener para cada elemento las reglas de CSS
+Va a ser un arbol, que va a tener una estructura parecida al DOM, pero que va a contener para cada elemento las reglas de CSS
 (font-size, display, color, etc.). Asemeja una estrucura de cascada, donde las propiedades del hijo seran las del padre, a menos que se especifique lo contrario.
 
 3. Creando el render Tree

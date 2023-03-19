@@ -36,3 +36,10 @@
         var boton = document.querySelector("#boton");
 
         boton.addEventListener('click', onClick)
+
+        console.log(window)
+        
+        let texto = 'Hola mi nombre es Diana Ripoll'
+        const hablar = (texto) => speechSynthesis.speak(new SpeechSynthesisUtterance(texto))
+
+        hablar(texto)

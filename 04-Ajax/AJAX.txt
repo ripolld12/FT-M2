@@ -1,0 +1,29 @@
+
+CLIENTE ---->  SERVIDOR ----> BDD
+
+Como cliente le voy a hacer diferentes peticiones al Servidor (peticiones HTTP)
+Peticion GET: Le pido al servidor que me traiga información (ejemplo; cuando busco a alguien en instagram) 
+Peticion POST: Le pido al servidor que cree algo (ejemplo: cuando realizo una publicacion en instagram)
+Peticion PUT: Le pido al servidor que modifique o actualice algo (ejemplo: cuando cambio nombre de usuario en instagram)
+Peticion DELETE: Le pido al servidor que elimine algo (ejemplo: cuando elimino una publicacion en instagram)
+
+Antes, el cliente hacía una request y el servidor le devolvía la pagina HTML con lo que el cliente solicitó, pero la pagina se tenia que recargar
+Ahora, el cliente hace la request inicial y funciona como antes se recarga la pagina una vez, pero las peticiones siguientes, se procesan con Ajax, 
+el servidor devuelve un archivo JSON con solo la info que se requiere, no hay necesidad de recargar la pagina.
+
+AJAX funciona de manera asincrona, es decir, cuando el cliente realiza una request esta es delegada sin afectar la pagina y se retorna la información.
+Un buen ejemplo es el de la bandeja de entrada, cuando llega un nuevo mensaje no hay que recargar la bandeja, de manera asincrona la pagina web solicita la actualizacion y el mensaje aparece
+en la bandeja sin necesidad de recargar
+
+COSAS QUE PODEMOS MODIFICAR O DELEGAR A LA WEB API
+- DOM
+- AJAX
+
+Cuando una tarea es delegada a la WEB API, ella pasa a una QUEUE y luego pasaba a la aplicacion y se mostraba en pantalla (como lo vimos en el M1)
+
+
+
+
+
+
+
