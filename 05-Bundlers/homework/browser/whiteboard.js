@@ -1,6 +1,6 @@
-(function () {
 
-  window.whiteboard = new window.EventEmitter();
+
+  const whiteboard = new window.EventEmitter();
 
   // Ultimately, the color of our stroke;
   var color;
@@ -113,4 +113,3 @@
 
   };
 
-})();
