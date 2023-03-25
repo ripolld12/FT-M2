@@ -1,0 +1,7 @@
+Antes, una pagina web tradicional podia tener un home con un menu de opciones que llevaban a otras paginas que finalmente estaban enlazadas, pero no era eficiente porque habia que tener un 
+archivo html por cada una de ellas.
+En react vamos a usar un SPA (Single Page Application), en donde ya no es necesario trabajar con archivos html distintos sino con los mismos componentes.
+
+Para usar esta opcion debemos descargar la libreria React Router. Por cada ruta que creemos vamos a tener un path (ej: localhost:3000/about<-- Lo que esta despues de /)
+
+Demos hacer 

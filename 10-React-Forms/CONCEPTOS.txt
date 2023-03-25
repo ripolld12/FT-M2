@@ -1,0 +1,31 @@
+Cuando una pagina nos solicita informacion y tenemos que rellenar informacion, vamos a usar formularios.
+Esta informacion se ingresa a traves de inputs y se debe controlar que los datos sean validos, que completen todo el formulario, etc...
+Tambien debe haber un boton para ingresar o iniciar sesion.
+
+Hay formularios controlados y no controlados. Con React se deben usar los formularios controlados.
+
+
+                Peticion HTTP
+                    GET,
+                    POST
+                    PUT
+                    DELETE
+
+
+
+                    POST
+CLIENTE      ----------------------->   SERVIDOR    ----------------------->    BDD
+
+El cliente hace                     El servidor envia                       La BDD guarda la información 
+peticiones HTTP                     la info a la BDD                        
+de tipo POST al                     para que la guarde
+servidor
+
+                        OK                                      OK
+CLIENTE      <-----------------------   SERVIDOR    <-----------------------    BDD
+                                                                            
+                                    El servidor confirma                    La BDD confirma al servidor
+                                    al cliente que la info                  que la info quedo guardada
+                                    quedo guardada
+
+

@@ -1,0 +1,33 @@
+PROPS ------> COMPONENT ---> DOM Virtual ---> DOM
+               state
+
+
+
+Todos los componentes tienen un state o estado que es propio del componente, no son props (info que viene de afuera), sino puramente para el uso propio del componente.
+Las props son la configuracion inicial del componenete, son los datos con los que van a ser renderizados.
+Pero la vida de un componente no termina ahí. De hecho, cada componente puede tener un estado. Podremos acceder al estado de cada componentea través del objeto en this.state (clase)
+
+Todo componente en REACT tiene tres instancias
+
+MONTAJE -> Cuando el componente se crea en pantalla. En esta etapa se crear el contructor, este recibe props y trabaja con ellas, luego el componenete se renderiza, pero antes de eso, se actualiza
+el DOM, es decir, se compara con el DOM Virtual y se actualiza.
+
+Uso componentDidMount() para indicar lo que quiero que pase cuando el componenete se monte, por ejemplo, si yo tengo un package.json con la info que se usa para crear unas cards tipo Rick & Morty,  
+y yo tengo un HOME en donde tengo un boton inicio que al darle clic me muestras las cards, yo podria usar esta funcion para indicarle que me traiga la info de package.json solo cuando se monten las cards,
+antes de eso NO.
+
+ACTUALIZACION -> El componente se va a re-renderizar cuando hayan nuevas props o que haya un cambio en el estado. Luego se actualiza el DOM comparandolo con DOM virtual 
+
+Uso componentDidUpdate() para indicar lo que quiero que pase cuando el componenete se actualice, por ejemplo, en ejercicio del contador, yo puedo pedirle que haga un console.log cada que se actualice el contador,
+esto va a suceder cuando yo le de clic.
+
+DESMONTAJE -> Cuando ya no veo el componenete en pantalla.
+
+Uso componentWillUnmount() para indicar lo que quiero que pase cuando el componenete se desmonte, en el ejemplo de MONTAJE, si yo le doy clic al boton de HOME, me va a mostrar Cards, pero HOME se desmonta.
+
+
+Podemos trabajar con estados de manera funcional y no por clase, para eso vamos a usar Hooks, esta es una API que ofrece react (una libreria)
+
+
+
+

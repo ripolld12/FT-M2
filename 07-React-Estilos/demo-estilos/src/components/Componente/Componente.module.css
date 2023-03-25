@@ -1,0 +1,8 @@
+.contenedor{
+    background-color: pink;
+    color: black;
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid palevioletred
+}
