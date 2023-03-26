@@ -1,0 +1,52 @@
+REDUX
+
+En React, las props viajan hacia abajo, de componente a componente, y los eventos se activan y viajan al padre (hacia arriba)
+Con Redux vamos a tener un store que sera un objeto en el que yo tendre un unico estado global para toda aplicacion y cualquier componente puede acceder a la información de ese estado global.
+Las ACTIONS serán objetos que tienen como propiedad obligatoria un type, estas acciones las va a recibir un REDUCER que será quien cambie el estado global de acuerdo a estas actions, el 
+REDUCER no será otra cosa mas que una funcion con condicionales, donde evaluaremos la propiedad type de ACTIONS y realizarems los cambios solicitados en el estado global.
+REDUCER recibirá las ACTIONS como parametros.
+
+Ejemplo si yo quiero modificar la propiedad count del estado global.
+
+
+                                dispatch
+        ACTIONS         ----------------------->                        REDUCER                         ------------------------>                   STORE
+
+{type: 'AUMENTAR_COUNT'}                            function reducer (..., action) {                                                            Estado inicial:
+                                                        if (action.type==='AUMENTAR_COUNT') {                                                   { count: 0,
+                                                            return { ... store,                                                                   cohorte: '36B'   
+                                                                    count: store.count + 1 }                                                      }    
+                                                        }   
+                                                                                                                                               Nuevo Estado:
+                                                                                                                                                { count: 1,
+                                                                                                                                                  cohorte: '36B'
+                                                                                                                                                  }  
+
+
+
+
+
+{type: 'DECREMENTAR_COUNT'}                             if (action.type === 'DECREMENTAR_COUNT'){                                                Estado inicial:
+                                                            return { ... store,                                                                  { count: 1,
+                                                                    count: store.count - 1 }                                                       cohorte: '36B'
+                                                        }                                                                                          }
+
+                                                                                                                                                Nuevo Estado:
+                                                                                                                                                { count: 0,
+                                                                                                                                                  cohorte: '36B'
+                                                                                                                                                  }                                                                                                                       
+
+
+
+
+
+{type: 'CAMBIAR_COHORTE',                               if (action.type === 'CAMBIAR_COHORTE'){                                                Estado inicial:
+payload: 'FT-36B'                                           return { ... store,                                                                  { count: 0,
+}                                                                    cohorte: action.payload }                                                     cohorte: '36B'
+                                                        }                                                                                          }
+                                                    }
+                                                                                                                                                Nuevo Estado:
+                                                                                                                                                { count: 0,
+                                                                                                                                                  cohorte: 'FT-36B'
+                                                                                                                                                  }         
+
